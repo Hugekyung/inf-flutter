@@ -3,18 +3,28 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.black,
-        body: Center(
-          child: Text(
-            'Hello world!',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20.0,
-            ),
-          ),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
     ),
   );
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color(0xFF1559eb),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            'asset/img/mountain.jpg',
+          ),
+          CircularProgressIndicator(
+            color: Colors.white,
+          ),
+        ],
+      ),
+    );
+  }
 }
