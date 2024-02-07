@@ -12,3 +12,11 @@
 - 두 위젯 모두 하위에 flex라는 값으로 비율을 지정해 줄 수 있다.
 - Expanded: 나머지 남는 주축을 채워준다.
 - Flexible: 주축의 사용 비율을 유동적으로 할당해준다. 
+
+## 유용한 개발 팁
+- setJavaScriptMode() 함수: JavaScript를 활성화할 것인지 세팅하는 함수
+  - 안드로이드에서는 기본적으로 JavaScript가 활성화되어 있지 않기 때문에 위 함수를 통해 활성화해야 한다.
+      ```flutter
+        WebViewController()..setJavaScriptMode(JavaScriptMode.unrestricted)
+      ```
+- 온점 두 개의 의미: 일반적으로 온점 하나를 통해 하위 depth로 이동할 수 있다. 하지만 온점 두 개는 온점 한 개일 떄와 반대로 해당 함수를 실행한 자기 자신을 가리키게 한다.
