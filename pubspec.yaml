@@ -62,6 +62,25 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
    - asset/img/
+
+  fonts:
+    - family: nanum
+      fonts:
+        - asset: asset/font/NanumPenScript-Regular.ttf
+
+    - family: single
+      fonts:
+        - asset: asset/font/SingleDay-Regular.ttf
+
+    - family: dongle
+      fonts:
+        - asset: asset/font/Dongle-Light.ttf
+          weight: 400
+        - asset: asset/font/Dongle-Regular.ttf
+          weight: 600
+        - asset: asset/font/Dongle-Bold.ttf
+          weight: 800
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
